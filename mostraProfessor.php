@@ -52,8 +52,8 @@
                             <td><?PHP echo($nome);?></td>
                             <td><?PHP echo($data);?></td>
                             <td><?PHP echo($disciplina);?></td>                                
-                            <td><?PHP echo("<a href='altera.php?cod=$codigo'>Alterar</a>");?></td>
-                            <td><?PHP echo("<a href='deleta.php?cod=$codigo'>Deletar</a>");?></td>                                 
+                           <!-- <td><?PHP echo("<a href='altera.php?cod=$codigo'>Alterar</a>");?></td>
+                            <td><?PHP echo("<a href='deleta.php?cod=$codigo'>Deletar</a>");?></td>   -->                              
                         </tr>    
                  <?PHP
                     }

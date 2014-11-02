@@ -52,8 +52,8 @@
                             <td><?PHP echo($nome);?></td>
                             <td><?PHP echo($email);?></td>
                             <td><?PHP echo($curso);?></td>                                
-                            <td><?PHP echo("<a href='altera.php?matri=$matricula'>Alterar</a>");?></td>
-                            <td><?PHP echo("<a href='deleta.php?matri=$matricula'>Deletar</a>");?></td>                                 
+                        <!--    <td><?PHP echo("<a href='altera.php?matri=$matricula'>Alterar</a>");?></td>
+                            <td><?PHP echo("<a href='deleta.php?matri=$matricula'>Deletar</a>");?></td>     -->                            
                         </tr>    
                  <?PHP
                     }

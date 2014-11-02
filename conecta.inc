@@ -10,7 +10,7 @@
 <?PHP
 	function conecta_bd()
 	{
-		$link = mysqli_connect('localhost', 'root', '', 'escola');
+		$link = mysqli_connect('mysql.hostinger.com.br', 'u784500201_root', 'aacb08TUBf', 'u784500201_escol');
 		if($link){
 			return($link);
 		}
