@@ -45,15 +45,17 @@
                         $codigo = $linha["codigo"];
                         $nome = $linha["nome"];
                         $data = $linha["data_admissao"];
-                        $disciplina = $linha["disciplina"];                        	
+                        $disciplina = $linha["disciplina"]; 
+						
+						$data = date("d/m/Y", strtotime($data));                       	
                 ?>	                
                         <tr>
                             <td><?PHP echo($codigo);?></td>
                             <td><?PHP echo($nome);?></td>
                             <td><?PHP echo($data);?></td>
                             <td><?PHP echo($disciplina);?></td>                                
-                           <!-- <td><?PHP echo("<a href='altera.php?cod=$codigo'>Alterar</a>");?></td>
-                            <td><?PHP echo("<a href='deleta.php?cod=$codigo'>Deletar</a>");?></td>   -->                              
+                            <td><?PHP echo("<a href='alteraProfessor.php?cod=$codigo'>Alterar</a>");?></td>
+                            <td><?PHP echo("<a href='deletaProfessor.php?cod=$codigo'>Deletar</a>");?></td>                              
                         </tr>    
                  <?PHP
                     }

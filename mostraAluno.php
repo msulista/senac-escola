@@ -42,18 +42,18 @@
                     
                     while($linha= mysqli_fetch_array($resultado)){                       
                         
-                        $matricula = $linha["matricula"];
+                        $matri = $linha["matricula"];
                         $nome = $linha["nome"];
                         $email = $linha["email"];
                         $curso = $linha["curso"];                        	
                 ?>	                
                         <tr>
-                            <td><?PHP echo($matricula);?></td>
+                            <td><?PHP echo($matri);?></td>
                             <td><?PHP echo($nome);?></td>
                             <td><?PHP echo($email);?></td>
                             <td><?PHP echo($curso);?></td>                                
-                        <!--    <td><?PHP echo("<a href='altera.php?matri=$matricula'>Alterar</a>");?></td>
-                            <td><?PHP echo("<a href='deleta.php?matri=$matricula'>Deletar</a>");?></td>     -->                            
+                        	<td><?PHP echo("<a href='alteraAluno.php?matri=$matri'>Alterar</a>");?></td>
+                            <td><?PHP echo("<a href='deletaAluno.php?matri=$matri'>Deletar</a>");?></td>                            
                         </tr>    
                  <?PHP
                     }
